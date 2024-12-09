@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container, .menu-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+    line-height: 60px;
+    margin-left: 80px;
+}
+
+#dark-mode-toggle {
+    padding: 3px 8px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Añadido box-shadow para la transición */
+}
+
+button:hover {
+    background-color: #45a049;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Añade sombra al botón */
+    transform: translateY(-2px); /* Opcional: levanta un poco el botón */
+}
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.action-box {
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+    text-align: center;
+    background-color: white;
+}
+
+.action-item {
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 18px;
+    display: block;
+    padding: 10px; /* Aumenta el área clickeable */
+}
+
+.action-item:hover {
+    color: #45a049; /* Cambia el color del texto al pasar el cursor */
+}
+
+/* Estilos para el modo oscuro */
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .login-container, .dark-mode .menu-container {
+    background-color: #222;
+}
+
+.dark-mode .action-box {
+    border-color: #45a049;
+    background-color: #333;
+}
+
+.dark-mode .action-item {
+    color: #4CAF50;
+}
+
+.dark-mode #dark-mode-toggle {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.dark-mode input[type="text"], .dark-mode input[type="password"] {
+    background-color: #444;
+    color: white;
+}
+
+.dark-mode input::placeholder, .dark-mode textarea::placeholder {
+    color: #aaa;
+}

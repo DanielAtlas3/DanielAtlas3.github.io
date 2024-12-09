@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #001f3f; /* Azul marino elegante */
+            color: #ffffff; /* Texto blanco */
+            margin: 0; /* Eliminar márgenes */
+            padding: 0; /* Eliminar padding */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ocupa toda la altura de la ventana */
+        }
+
+        .menu-container {
+            text-align: center; /* Centrar contenido */
+            background: linear-gradient(145deg, #011f4b, #005f99); /* Fondo degradado */
+            border-radius: 15px; /* Bordes redondeados */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Sombra */
+            padding: 40px 30px; /* Espacio interno */
+            width: 400px; /* Ancho fijo */
+        }
+
+        h2 {
+            margin-bottom: 20px; /* Espacio debajo del título */
+            color: #00aaff; /* Azul brillante para el título */
+            font-size: 28px; /* Tamaño del título */
+        }
+
+        .button-container {
+            display: flex; /* Disposición en línea */
+            flex-direction: column; /* Disposición vertical */
+            gap: 20px; /* Espacio entre botones */
+        }
+
+        .action-item {
+            text-decoration: none; /* Sin subrayado */
+            color: #ffffff; /* Texto blanco */
+            background: linear-gradient(145deg, #005f99, #007acc); /* Fondo degradado */
+            padding: 15px 25px; /* Espacio interno */
+            border-radius: 8px; /* Bordes redondeados */
+            font-size: 18px; /* Tamaño del texto */
+            font-weight: bold; /* Negrita */
+            text-align: center; /* Centrar texto */
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+            transition: transform 0.2s, box-shadow 0.2s; /* Transiciones suaves */
+        }
+
+        .action-item:hover {
+            background: linear-gradient(145deg, #007acc, #005f99); /* Fondo degradado inverso */
+            transform: scale(1.05); /* Efecto de ampliación */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Sombra más intensa */
+        }
+
+        .action-item:active {
+            transform: scale(0.95); /* Efecto al hacer clic */
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3); /* Sombra más pequeña */
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h2>Menú Principal</h2>
+        <div class="button-container">
+            <a href="Nuevo_Paciente.html" class="action-item">Nuevo Paciente</a>
+            <a href="buscar_paciente.html" class="action-item">Buscar Paciente</a>
+        </div>
+    </div>
+</body>
+</html>
